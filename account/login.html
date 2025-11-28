@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Video Store - ログイン / 新規登録</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script>
+        function switchTab(tabName) {
+            const loginForm = document.getElementById('login-form');
+            const registerForm = document.getElementById('register-form');
+            const loginTab = document.getElementById('tab-login');
+            const registerTab = document.getElementById('tab-register');
+
+            if (tabName === 'login') {
+                loginForm.style.display = 'block';
+                registerForm.style.display = 'none';
+                loginTab.classList.add('active');
+                registerTab.classList.remove('active');
+            } else {
+                loginForm.style.display = 'none';
+                registerForm.style.display = 'block';
+                loginTab.classList.remove('active');
+                registerTab.classList.add('active');
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <div class="logo"><a href="../index.html" style="text-decoration: none; color: inherit;">Sports Video
+                    Store</a></div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">ホーム</a></li>
+                    <li><a href="../index.html#products">商品一覧</a></li>
+                    <li><a href="../news/index.html">ニュース</a></li>
+                    <li><a href="../support/faq.html">よくある質問</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="../account/mypage.html" class="btn btn-outline">マイページ</a>
+                <a href="../cart/index.html" class="btn btn-primary">カート</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container page-content">
+        <div class="auth-container">
+            <div class="auth-tabs">
+                <div id="tab-login" class="auth-tab active" onclick="switchTab('login')">ログイン</div>
+                <div id="tab-register" class="auth-tab" onclick="switchTab('register')">新規登録</div>
+            </div>
+
+            <!-- Login Form -->
+            <div id="login-form">
+                <h2 style="text-align: center; margin-bottom: 20px; font-size: 20px;">ログイン</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="login-email" class="form-label">メールアドレス</label>
+                        <input type="email" id="login-email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password" class="form-label">パスワード</label>
+                        <input type="password" id="login-password" name="password" class="form-control" required>
+                    </div>
+                    <div style="text-align: center; margin-top: 30px;">
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">ログイン</button>
+                    </div>
+                    <div style="text-align: center; margin-top: 15px;">
+                        <a href="#" style="font-size: 14px; color: #666;">パスワードをお忘れの方はこちら</a>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Register Form -->
+            <div id="register-form" style="display: none;">
+                <h2 style="text-align: center; margin-bottom: 20px; font-size: 20px;">新規会員登録</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="reg-name" class="form-label">お名前</label>
+                        <input type="text" id="reg-name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-email" class="form-label">メールアドレス</label>
+                        <input type="email" id="reg-email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-password" class="form-label">パスワード</label>
+                        <input type="password" id="reg-password" name="password" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-password-confirm" class="form-label">パスワード（確認）</label>
+                        <input type="password" id="reg-password-confirm" name="password_confirm" class="form-control"
+                            required>
+                    </div>
+                    <div style="margin-top: 20px; font-size: 14px;">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms"><a href="../company/terms.html" target="_blank"
+                                style="color: var(--primary-color); text-decoration: underline;">会員規約</a>に同意する</label>
+                    </div>
+                    <div style="text-align: center; margin-top: 30px;">
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">登録する</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sports Video Store. All rights reserved.</p>
+            <div style="margin-top: 10px;">
+                <a href="../company/privacy.html">プライバシーポリシー</a>
+                <a href="../company/law.html">特定商取引法に基づく表記</a>
+                <a href="../support/contact.html">お問い合わせ</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

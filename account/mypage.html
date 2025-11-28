@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マイページ - Sports Video Store</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <div class="logo"><a href="../index.html" style="text-decoration: none; color: inherit;">Sports Video
+                    Store</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">ホーム</a></li>
+                    <li><a href="../index.html#products">商品一覧</a></li>
+                    <li><a href="../news/index.html">ニュース</a></li>
+                    <li><a href="../support/faq.html">よくある質問</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="../account/mypage.html" class="btn btn-outline">マイページ</a>
+                <a href="../cart/index.html" class="btn btn-primary">カート</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="mypage-layout">
+            <aside class="sidebar">
+                <h3 style="margin-bottom: 15px;">マイページメニュー</h3>
+                <ul>
+                    <li><a href="#" class="active">購入履歴 / ダウンロード</a></li>
+                    <li><a href="#">会員情報編集</a></li>
+                    <li><a href="#">お気に入り</a></li>
+                    <li><a href="#">ログアウト</a></li>
+                </ul>
+            </aside>
+
+            <main class="main-content">
+                <h1 style="margin-bottom: 30px;">購入履歴 / ダウンロード</h1>
+
+                <div class="download-list">
+                    <!-- Item 1: Available -->
+                    <div class="item">
+                        <div class="download-info">
+                            <h3>2024 サッカー選手権 決勝ハイライト</h3>
+                            <div class="download-meta">購入日: 2024/11/25 | 注文番号: #123456</div>
+                        </div>
+                        <div class="download-status">
+                            <span class="download-count">ダウンロード回数: 0/3回</span>
+                            <a href="#" class="btn btn-primary">ダウンロード</a>
+                            <p style="font-size: 12px; color: #666; margin-top: 5px;">※URLをメールで送信します</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Limit Reached -->
+                    <div class="item">
+                        <div class="download-info">
+                            <h3>バスケットボール リーグ優勝決定戦</h3>
+                            <div class="download-meta">購入日: 2024/10/10 | 注文番号: #112233</div>
+                        </div>
+                        <div class="download-status">
+                            <span class="download-count" style="color: #dc3545;">ダウンロード回数: 3/3回 (上限到達)</span>
+                            <button class="btn btn-disabled" disabled>ダウンロード不可</button>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: In Progress -->
+                    <div class="item">
+                        <div class="download-info">
+                            <h3>テニス グランドスラム 準決勝</h3>
+                            <div class="download-meta">購入日: 2024/09/15 | 注文番号: #098765</div>
+                        </div>
+                        <div class="download-status">
+                            <span class="download-count">ダウンロード回数: 1/3回</span>
+                            <a href="#" class="btn btn-primary">ダウンロード</a>
+                            <p style="font-size: 12px; color: #666; margin-top: 5px;">※URLをメールで送信します</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sports Video Store. All rights reserved.</p>
+            <div style="margin-top: 10px;">
+                <a href="../company/privacy.html">プライバシーポリシー</a>
+                <a href="../company/law.html">特定商取引法に基づく表記</a>
+                <a href="../support/contact.html">お問い合わせ</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
